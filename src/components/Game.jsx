@@ -19,7 +19,7 @@ function Game({operation, maxNumber}) {
     const [userAnswer, setUserAnswer] = useState('');
     const [answered, setAnswered] = useState(false);
     const [score, setScore] = useState(0);
-    const gameLength = 60; //Seconds
+    const gameLength = 60; //Seconds issue to be fixed later
     const [timeLeft, setTimeLeft] = useState(gameLength);
 
     function appendToAnswer(num) {
