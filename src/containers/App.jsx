@@ -21,7 +21,7 @@ function App() {
           maxNumber={maxNumber}
           setMaxNumber={setMaxNumber} />
         }/>
-        <Route path="/play"
+        <Route exact path="/play"
           element={
             <Game operation={operation}
             maxNumber={maxNumber} />

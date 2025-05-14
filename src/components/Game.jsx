@@ -6,6 +6,7 @@ import Equation from "./Equation";
 import NumberButton from "./NumberButton";
 import ClearButton from "./ClearButton";
 import './Game.css';
+import Keyboard from "./Keyboard";
 
 import {randInt} from "../helpers/helpers";
 
@@ -132,6 +133,7 @@ function Game({operation, maxNumber}) {
                     <ClearButton handleClick={setUserAnswer}/>
                 </div>
             </div>
+            <Keyboard setUserAnswer={setUserAnswer} />
         </main>
     )
 }
